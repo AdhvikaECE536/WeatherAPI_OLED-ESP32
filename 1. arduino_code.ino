@@ -6,7 +6,6 @@
  * - CONDITION, TEMP, FEELS, HUMIDITY, PRESSURE, WIND (change view)
  * - AUTO (cycle through all views)
  * - REFRESH (update weather now)
- * - LOC:17.23,78.43 (change location)
  */
 
 #include <WiFi.h>
@@ -24,15 +23,15 @@
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 // ================= WIFI CONFIG ====================
-const char* ssid = "Ad35";
-const char* password = "adhvi536*";
+const char* ssid = "<your ssid>";
+const char* password = "<your password>";
 
 // ================= WEATHER API ====================
 String URL = "http://api.openweathermap.org/data/2.5/weather?";
-String ApiKey = "d3c893bfa03ab05bce6f5df53c1fde83";
+String ApiKey = "<your APIkey>";
 
-String lat = "17.23912677317249";
-String lon = "78.43579050289536";
+String lat = "<your lat>";
+String lon = "<your lon>";
 
 // ================= SCREEN CONTROL =================
 uint8_t screenStage = 0;
