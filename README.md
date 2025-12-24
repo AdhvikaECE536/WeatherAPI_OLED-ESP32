@@ -3,7 +3,7 @@
 The repository contains a simple weather display system using ESP32 microcontroller and OLED screen that fetches real-time weather data from OpenWeatherMap API.
 
 
-## PART A : Using only Arduino IDE
+
 
 ### 📂 Repository Structure
 
@@ -47,6 +47,7 @@ GPIO21   →     SDA
 GPIO22   →     SCK
 ```
 
+## PART A : Using only Arduino IDE
 
 ### 📦 Software Requirements
 
