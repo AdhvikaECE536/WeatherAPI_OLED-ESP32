@@ -1,29 +1,32 @@
-const express = require('express');
-const { SerialPort } = require('serialport');
-const { ReadlineParser } = require('@serialport/parser-readline');
+// including the express library & creating the web server "App"
+const Express = require('express');
+const App = Express();
 
-const app = express();
-const PORT = 3000;
+const Port = 3000;
 
-// Connect to ESP32 (change COM8 to your port if needed)
+// connecting to ESP32
+const {SerialPort} = require('serialport');
+
 const esp32 = new SerialPort({
-  path: 'COM8',
-  baudRate: 115200
+  path : 'COM8',
+  baudRate : 115200  
 });
-
-const parser = esp32.pipe(new ReadlineParser({ delimiter: '\n' }));
 
 esp32.on('open', () => {
-  console.log('✅ ESP32 Weather Station connected on COM8');
+  console.log('esp32 connected on ', path);
 });
 
-parser.on('data', (data) => {
-  console.log('🌤️ Weather Station:', data);
+// to get full-line data
+const {ReadlineParser} = require('@serialport/parser-readline');
+const Parser = esp32.pipe(new ReadlineParser({delimiter: '\n'}));
+
+Parser.on('data',(data) => {
+  console.log('Weather station:', data);
 });
 
-// Serve static files from 'public' folder
-app.use(express.static('public'));
-app.use(express.json());
+// serve static files from the public folder & json files
+App.use(Express.static('public'));
+App.use(Express.json());
 
 // API endpoint to change location
 app.post('/location', (req, res) => {
