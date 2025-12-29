@@ -7,7 +7,7 @@ The repository contains a simple weather display system using ESP32 microcontrol
 
 ### 📂 Repository Structure
 
-- `1. arduino_code.ino` – ESP32 code to fetch and display weather on OLED  
+- `1. arduino_code.ino`    – ESP32 code to fetch and display weather on OLED  
 - `2. find_port.js`        – Notes for detecting ESP32 serial port  
 - `3. server.js`           – Local server 
 - `4. index.html`          – Frontend   
