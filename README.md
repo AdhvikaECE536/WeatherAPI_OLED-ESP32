@@ -413,6 +413,11 @@ This project is open source and available for educational purposes.
 
 ---
 
+## 🙏 Acknowledgments
+Special thanks to GMR Airports Ltd for proving me the environment to learn, explore and grow. 
+
+---
+
 **Note**: This is a learning project. It uses open-source libraries and public APIs. Feel free to experiment and modify the code!
 
 
