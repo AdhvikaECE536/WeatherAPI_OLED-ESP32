@@ -78,7 +78,7 @@ GPIO22   →     SCK
    - **ArduinoJson** (by Benoit Blanchon) - for parsing weather data
 
 
-### 🚀 Quick Start Guide
+### 🚀 Setup Steps
 
 #### Step 1: Get OpenWeatherMap API Key
 
@@ -112,7 +112,7 @@ String lat = "<your lat>";
 String lon = "<your lon>";
 ```
 
-#### Step 3: Upload to ESP32
+#### Step 4: Upload to ESP32
 
 1. Connect ESP32 to your computer via USB
 2. Select board: `Tools` → `Board` → `ESP32 Dev Module`
@@ -123,7 +123,7 @@ String lon = "<your lon>";
 
 Note: it is best to sure the code runs with no errors before uploading it to the microcontroller (99% no errors would incur)
 
-#### Step 4: Monitor Serial Output
+#### Step 5: Monitor Serial Output
 
 1. Open Serial Monitor: `Tools` → `Serial Monitor`
 2. Set baud rate to `115200` and `new line`
