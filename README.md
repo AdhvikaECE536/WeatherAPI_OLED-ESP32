@@ -171,24 +171,24 @@ LOC:xx.xx,xx.xx
 
 
 #### WiFi Connection Failed
-- ✅ Double-check SSID and password (case-sensitive!)
-- ✅ Make sure WiFi is 2.4GHz (ESP32 doesn't support 5GHz)
-- ✅ Check if WiFi has special characters in password
-- ✅ Try moving ESP32 closer to router
+- Double-check SSID and password (case-sensitive!)
+- Make sure WiFi is 2.4GHz (ESP32 doesn't support 5GHz)
+- Check if WiFi has special characters in password
+- Try moving ESP32 closer to router
 
 #### API Not Responding
-- ✅ Verify API key is correct
-- ✅ Check city name spelling
-- ✅ Ensure you have internet connection
-- ✅ Wait a few minutes (new API keys can take time to activate)
-- ✅ Check API usage limits (free tier has limits)
+- Verify API key is correct
+- Check city name spelling
+- Ensure you have internet connection
+- Wait a few minutes (new API keys can take time to activate)
+- Check API usage limits (free tier has limits)
 
 #### Code Won't Upload
-- ✅ Hold `BOOT` button on ESP32 while uploading
-- ✅ Check USB cable (some cables are power-only)
-- ✅ Select correct COM port
-- ✅ Try a different USB port
-- ✅ Install CH340/CP2102 drivers if needed
+- Hold `BOOT` button on ESP32 while uploading
+- Check USB cable (some cables are power-only)
+- Select correct COM port
+- Try a different USB port
+- Install CH340/CP2102 drivers if needed
 
 ### 📖 How It Works
 
@@ -347,22 +347,22 @@ Click any button to change the OLED display:
 ### 🐛 Troubleshooting
 
 #### Server Won't Start
-- ✅ Make sure Node.js is installed: `node --version`
-- ✅ Install dependencies: `npm install`
-- ✅ Check if port 3000 is already in use
-- ✅ Verify ESP32 is connected to correct COM port
+- Make sure Node.js is installed: `node --version`
+- Install dependencies: `npm install`
+- Check if port 3000 is already in use
+- Verify ESP32 is connected to correct COM port
 
 #### Can't Connect from Browser
-- ✅ Make sure server is running (`node server.js`)
-- ✅ Check firewall settings
-- ✅ Try `http://localhost:3000` first
-- ✅ Check console for error messages
+- Make sure server is running (`node server.js`)
+- Check firewall settings
+- Try `http://localhost:3000` first
+- Check console for error messages
 
 #### ESP32 Not Responding to Commands
-- ✅ Verify you uploaded the updated Arduino code with serial command handling
-- ✅ Check Serial Monitor shows "Weather Station Ready!"
-- ✅ Make sure baud rate is 115200
-- ✅ Try unplugging and replugging ESP32
+- Verify you uploaded the updated Arduino code with serial command handling
+- Check Serial Monitor shows "Weather Station Ready!"
+- Make sure baud rate is 115200
+- Try unplugging and replugging ESP32
 
 ### 📖 How It Works
 1. **Serial Communication**: Node.js server connects to ESP32 via USB serial
