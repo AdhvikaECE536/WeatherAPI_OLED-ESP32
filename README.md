@@ -400,6 +400,13 @@ By completing this project, you'll learn:
 - 🎨 Custom weather icons on OLED
 
 ---
+## Photos
+
+<img width="767" height="432" alt="image" src="https://github.com/user-attachments/assets/46a7b7e2-8c16-4423-8e49-e2be7e1b0eb5" />
+
+<img width="767" height="601" alt="image" src="https://github.com/user-attachments/assets/5647e743-1ccc-4da2-b843-21daefcf7f85" />
+
+---
 
 ## 📄 License
 
